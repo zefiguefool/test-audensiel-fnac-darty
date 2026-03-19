@@ -257,14 +257,15 @@ a:focus-visible {
     flex: 0 0 260px;
   }
 }
-.carousel__slide img {
+.carousel__slide .carousel__slide img {
   width: 100%;
   height: auto;
+  object-fit: cover;
   display: block;
   aspect-ratio: 16/9;
 }
 @media (min-width: 768px) {
-  .carousel__slide img {
+  .carousel__slide .carousel__slide img {
     aspect-ratio: 3/4;
   }
 }

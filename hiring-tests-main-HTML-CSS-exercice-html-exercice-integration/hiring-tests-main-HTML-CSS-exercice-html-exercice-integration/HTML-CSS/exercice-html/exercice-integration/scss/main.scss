@@ -308,17 +308,18 @@ a {
       flex: 0 0 260px;
     }
 
-    img {
+    .carousel__slide img {
       width: 100%;
       height: auto;
+      object-fit: cover;
       display: block;
-
       aspect-ratio: 16 / 9;
 
-      @media (min-width: 768px) {
-        aspect-ratio: 3 / 4;
-      }
-    }
+  @media (min-width: 768px) {
+    aspect-ratio: 3 / 4;
+  }
+}
+
   }
 
   &__btn {
