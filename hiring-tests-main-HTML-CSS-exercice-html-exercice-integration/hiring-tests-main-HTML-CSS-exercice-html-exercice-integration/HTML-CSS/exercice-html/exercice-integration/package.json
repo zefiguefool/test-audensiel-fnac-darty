@@ -1,0 +1,16 @@
+{
+  "name": "exercice-integration",
+  "version": "1.0.0",
+  "description": "Réalisez la maquette en HTML (responsive serait un plus) en respectant la sémantique, les normes W3C, les règles d'accessibilité et les critères de performance web.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.98.0"
+  }
+}
