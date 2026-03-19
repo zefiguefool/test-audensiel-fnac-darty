@@ -10,6 +10,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
     btnPrev.disabled = viewport.scrollLeft <= 0;
     btnNext.disabled = viewport.scrollLeft >= maxScroll - 1;
+    console.log("viewPort.clientWidth", viewport.clientWidth);
   }
 
   btnNext.addEventListener("click", () => {
