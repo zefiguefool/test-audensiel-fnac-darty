@@ -363,6 +363,16 @@ a:focus-visible {
   border-top: 1px solid rgba(148, 163, 184, 0.4);
   padding: 2.5rem 1.5rem 1.5rem;
   color: #d0d2db;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .site-footer footer {
+    justify-content: flex-start; /* si tu veux un alignement différent en desktop */
+    text-align: left;
+  }
 }
 .site-footer__inner {
   max-width: 1100px;
@@ -374,6 +384,14 @@ a:focus-visible {
   .site-footer__inner {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: flex-start;
+  }
+}
+.site-footer__column {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .site-footer__column {
+    text-align: left;
   }
 }
 @media (max-width: 767px) {
