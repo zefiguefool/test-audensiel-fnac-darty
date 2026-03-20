@@ -234,6 +234,9 @@ a:focus-visible {
   scroll-snap-align: start;
   padding: 1rem;
 }
+.carousel__slide:first-child {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+}
 @media (min-width: 768px) {
   .carousel__slide .carousel__slide {
     flex: 0 0 100%;

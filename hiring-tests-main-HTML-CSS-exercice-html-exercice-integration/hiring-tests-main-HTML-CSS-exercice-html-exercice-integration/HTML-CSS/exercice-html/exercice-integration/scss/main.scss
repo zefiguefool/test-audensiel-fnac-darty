@@ -263,6 +263,8 @@ a {
   max-width: 1100px;
   margin: 0 auto 3rem;
 
+
+
   &__viewport {
     overflow: hidden;
     width: 100%;
@@ -272,6 +274,8 @@ a {
   &__track {
     display: flex;
     transition: transform 0.3s ease;
+    
+    
   }
 
   &__slide {
@@ -282,6 +286,10 @@ a {
     transition: transform 0.2s ease;
     scroll-snap-align: start;
     padding:1rem;
+    &:first-child{
+      padding:1.5rem 1.5rem 1.5rem 0;
+    }
+  
     @media (min-width: 768px) {
     .carousel__slide {
         flex: 0 0 100%;
