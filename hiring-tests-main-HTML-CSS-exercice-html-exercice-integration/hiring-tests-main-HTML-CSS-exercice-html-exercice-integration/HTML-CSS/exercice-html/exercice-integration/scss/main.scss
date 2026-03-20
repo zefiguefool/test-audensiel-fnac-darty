@@ -60,6 +60,9 @@ html {
   font-display: swap;
 }
 
+html {
+  scroll-padding-top: 37px;
+}
 
 body {
   margin: 0;
@@ -118,11 +121,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 
-  &__overlay {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at top, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.9));
-  }
+
 
   &__inner {
     position: relative;
@@ -231,7 +230,6 @@ a {
 .section {
   & + & {
     margin-top: 3rem;
-    
   }
 
   &__header {
@@ -473,7 +471,7 @@ a {
     }
 
     &--social {
-      @media (max-width: $breakpoint-md - 1) {
+      @media (max-width: $breakpoint-md) {
         order: -1;
       }
     }

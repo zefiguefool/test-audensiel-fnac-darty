@@ -39,6 +39,10 @@ html {
   font-style: italic;
   font-display: swap;
 }
+html {
+  scroll-padding-top: 37px;
+}
+
 body {
   margin: 0;
   font-family: "Amaranth", sans-serif;
@@ -93,11 +97,6 @@ a:focus-visible {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.site-header__overlay {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.9));
 }
 .site-header__inner {
   position: relative;
@@ -403,7 +402,7 @@ a:focus-visible {
     text-align: left;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .site-footer__column--social {
     order: -1;
   }
