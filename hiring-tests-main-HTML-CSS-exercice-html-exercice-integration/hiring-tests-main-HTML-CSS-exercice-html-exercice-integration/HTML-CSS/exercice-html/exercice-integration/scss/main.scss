@@ -269,7 +269,7 @@ a {
   &__track {
     display: flex;
     transition: transform 0.3s ease;
-    
+    justify-content: center;
     
   }
 
@@ -281,12 +281,11 @@ a {
     transition: transform 0.2s ease;
     scroll-snap-align: start;
     padding:1rem;
-    &:first-child{
-      padding:1.5rem 1.5rem 1.5rem 0;
+   
+    &:last-child{
+      padding-left:0
     }
-    &:first-child{
-      padding:0 1.5rem 1.5rem 1.5rem;
-    }
+   
   
     @media (min-width: 768px) {
     .carousel__slide {
