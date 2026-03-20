@@ -13,21 +13,21 @@ html {
 
 @font-face {
   font-family: "Amaranth";
-  src: url("../fonts/Amaranth-Regular.ttf") format("truetype");
+  src: url("../fonts/Amaranth/Amaranth-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Amaranth";
-  src: url("../fonts/Amaranth-Bold.ttf") format("truetype");
+  src: url("../fonts/Amaranth/Amaranth-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Amaranth";
-  src: url("../fonts/Amaranth-Italic.ttf") format("truetype");
+  src: url("../fonts/Amaranth/Amaranth-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -66,7 +66,7 @@ a {
   text-decoration: none;
 }
 a:focus-visible {
-  outline: 2px solid #f97316;
+  outline: 2px solid #9bc2f2;
   outline-offset: 2px;
 }
 
@@ -157,15 +157,6 @@ a:focus-visible {
   letter-spacing: 0.12em;
   color: #d0d2db;
   transition: color 0.2s ease;
-}
-.site-nav__link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.2rem;
-  width: 0;
-  height: 2px;
-  transition: width 0.25s ease;
 }
 .site-nav__link:hover {
   color: #fff;

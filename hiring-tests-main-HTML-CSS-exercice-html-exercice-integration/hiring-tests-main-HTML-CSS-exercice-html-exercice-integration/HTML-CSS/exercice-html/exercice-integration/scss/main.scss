@@ -2,7 +2,7 @@
 $font-base: 'Amaranth', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 $color-bg: #020617;
 $color-bg-alt: #020617;
-$color-primary: #f97316;
+$color-primary: #9bc2f2;
 $color-text: #020617;
 $color-muted: #d0d2db;
 $color-card-bg: #fff;
@@ -30,7 +30,7 @@ html {
 
 @font-face {
   font-family: "Amaranth";
-  src: url("../fonts/Amaranth-Regular.ttf") format("truetype");
+  src: url("../fonts/Amaranth/Amaranth-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -38,7 +38,7 @@ html {
 
 @font-face {
   font-family: "Amaranth";
-  src: url("../fonts/Amaranth-Bold.ttf") format("truetype");
+  src: url("../fonts/Amaranth/Amaranth-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@ html {
 
 @font-face {
   font-family: "Amaranth";
-  src: url("../fonts/Amaranth-Italic.ttf") format("truetype");
+  src: url("../fonts/Amaranth/Amaranth-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -194,16 +194,7 @@ a {
     color: $color-muted;
     transition: color 0.2s ease;
 
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -0.2rem;
-      width: 0;
-      height: 2px;
-     
-      transition: width 0.25s ease;
-    }
+    
 
     &:hover {
       color:#fff;
