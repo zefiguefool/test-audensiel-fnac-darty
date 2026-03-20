@@ -234,6 +234,9 @@ a:focus-visible {
 .carousel__slide:first-child {
   padding: 1.5rem 1.5rem 1.5rem 0;
 }
+.carousel__slide:first-child {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
 @media (min-width: 768px) {
   .carousel__slide .carousel__slide {
     flex: 0 0 100%;
