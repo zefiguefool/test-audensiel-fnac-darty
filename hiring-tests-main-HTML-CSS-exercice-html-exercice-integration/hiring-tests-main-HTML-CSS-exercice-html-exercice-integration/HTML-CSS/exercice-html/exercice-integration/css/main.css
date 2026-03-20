@@ -116,9 +116,6 @@ a:focus-visible {
   background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(10px);
 }
-.site-nav__item {
-  margin: 0.4rem;
-}
 .site-nav__inner {
   display: flex;
   align-items: center;
@@ -144,15 +141,15 @@ a:focus-visible {
   padding: 0;
   position: relative;
   width: 100%;
+  padding: 0.4rem 0;
 }
 .site-nav__list .site-nav--item--right {
-  margin-left: right;
   position: absolute;
   right: 0;
 }
 .site-nav__link {
   position: relative;
-  padding: 0.25rem 0;
+  padding: 0.25rem 0.5rem;
   font-size: 0.9rem;
   letter-spacing: 0.12em;
   color: #d0d2db;
