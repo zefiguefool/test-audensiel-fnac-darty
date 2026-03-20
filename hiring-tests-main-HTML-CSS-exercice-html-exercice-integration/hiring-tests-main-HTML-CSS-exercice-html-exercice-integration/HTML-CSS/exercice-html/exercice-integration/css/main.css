@@ -221,7 +221,7 @@ a:focus-visible {
 .carousel__track {
   display: flex;
   transition: transform 0.3s ease;
-  justify-content: center;
+  justify-content: start;
 }
 .carousel__slide {
   flex: 0 0 100%;
@@ -233,6 +233,9 @@ a:focus-visible {
   padding: 1rem;
 }
 .carousel__slide:last-child {
+  padding-right: 0;
+}
+.carousel__slide:first-child {
   padding-left: 0;
 }
 @media (min-width: 768px) {
