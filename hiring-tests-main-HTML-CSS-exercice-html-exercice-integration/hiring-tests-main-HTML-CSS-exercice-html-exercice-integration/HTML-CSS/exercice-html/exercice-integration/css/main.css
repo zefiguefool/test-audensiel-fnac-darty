@@ -230,10 +230,6 @@ a:focus-visible {
   border-radius: 12px;
   overflow: hidden;
   scroll-snap-align: start;
-  transition: transform 0.2s ease;
-}
-.carousel__slide:hover {
-  transform: scale(1.03);
 }
 @media (min-width: 768px) {
   .carousel__slide {
@@ -246,6 +242,10 @@ a:focus-visible {
   object-fit: cover;
   display: block;
   aspect-ratio: 16/9;
+  transition: transform 0.2s ease;
+}
+.carousel__slide .carousel__slide img:hover {
+  transform: scale(1.03);
 }
 @media (min-width: 768px) {
   .carousel__slide .carousel__slide img {

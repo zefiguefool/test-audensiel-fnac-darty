@@ -121,8 +121,6 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 
-
-
   &__inner {
     position: relative;
     padding: 4rem 1.5rem;
@@ -144,8 +142,6 @@ a {
   backdrop-filter: blur(10px);
 
   &__inner {
-  
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -176,10 +172,8 @@ a {
         
         position: absolute;
         right: 0;
-    }
-   
+    }  
   }
-
 
   &__link {
     position: relative;
@@ -188,9 +182,6 @@ a {
     letter-spacing: 0.12em;
     color: $color-muted;
     transition: color 0.2s ease;
-
-    
-
     &:hover {
       color:#fff;
     }
@@ -207,7 +198,6 @@ a {
 
 /* Main layout */
 .main {
-  
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
   background-color: $color-main;
@@ -217,7 +207,6 @@ a {
   & + & {
     margin-top: 3rem;
   }
-
   &__header {
     margin-bottom: 1.5rem;
     h2{
@@ -230,7 +219,6 @@ a {
       }
     }
   }
-
   &__title {
     margin: 0;
     font-size: $font-size-title;
@@ -245,34 +233,26 @@ a {
   overflow-x: auto;
   scroll-behavior: smooth;
 }
-
 .carousel__track {
   display: flex;
 }
-
 .carousel {
   position: relative;
   display: flex;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto 3rem;
-
-
-
   &__viewport {
     overflow: hidden;
     width: 100%;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
   }
-
   &__track {
     display: flex;
     transition: transform 0.3s ease;
     gap: 1rem;
-    
   }
-
   &__slide {
     flex: 0 0 100%;
     margin: 0;
@@ -280,31 +260,24 @@ a {
     border-radius: 12px;
     overflow: hidden;
     scroll-snap-align: start;
-    transition: transform 0.2s ease;
-   
-
-    &:hover {
-      transform: scale(1.03);
-    }
-
     @media (min-width: 768px) {
       flex: 0 0 260px;
     }
-
     .carousel__slide img {
       width: 100%;
       height: auto;
       object-fit: cover;
       display: block;
       aspect-ratio: 16 / 9;
-
+      transition: transform 0.2s ease;
+      &:hover {
+        transform: scale(1.03);
+      }
   @media (min-width: 768px) {
     aspect-ratio: 3 / 4;
   }
 }
-
   }
-
   &__btn {
     background:none;
     color: rgba(0,0,0,0.6);
@@ -317,10 +290,6 @@ a {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s ease;
-  
-
-    
-
     &:hover {
       
       color: black;
@@ -328,7 +297,6 @@ a {
     }
   }
 }
-
 
 /* Card */
 .card {
@@ -341,38 +309,30 @@ a {
   flex-direction: column;
   min-height: 100%;
   transition: transform 0.2s ease, 0.2s ease;
-
   &:hover {
     transform: translateY(-4px) scale(1.02);
-  
   }
-
   &__media {
     margin: 0;
     overflow: hidden;
     height: 150px;
   }
-
   &__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
     /* Portrait en desktop, paysage en mobile */
     aspect-ratio: 16 / 9;
-
     @media (min-width: $breakpoint-md) {
       aspect-ratio: 3 / 4;
     }
   }
-
   &__body {
     padding: 1rem 1.1rem 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
   }
-
   &__title {
     margin: 0;
     font-size: 0.95rem;
@@ -380,7 +340,6 @@ a {
     letter-spacing: 0.14em;
     text-align: center;
   }
-
   &__subtitle {
     margin: 0;
     font-size: $font-size-subtitle;
@@ -394,13 +353,11 @@ a {
       color:orange
     }
   }
-
   &__text {
     margin: 0.4rem 0 2rem;
     font-size: 0.9rem;
     color: $color-text;
   }
-
   &__link {
     align-self: flex-start;
     font-size: 0.85rem;
@@ -415,7 +372,7 @@ a {
     transform: translateX(-50%);
     border-top: 1px solid $color-border;
     padding-top: 0.5rem;
-    
+
   }
 }
 
@@ -433,36 +390,31 @@ a {
   footer {
     justify-content: flex-start; /* si tu veux un alignement différent en desktop */
     text-align: left;
+    }
   }
-}
   
-
   &__inner {
     max-width: 1100px;
     margin: 0 auto 1.5rem;
     display: grid;
     gap: 1.5rem;
-
     @media (min-width: $breakpoint-md) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
       align-items: flex-start;
     }
   }
-
   &__column {
     text-align: center;
     @media (min-width: $breakpoint-md) {
 
       text-align: left;
     }
-
     &--social {
       @media (max-width: $breakpoint-md) {
         order: -1;
       }
     }
   }
-
   &__title {
     margin: 0 0 0.75rem;
     font-size: 0.95rem;
@@ -470,7 +422,6 @@ a {
     letter-spacing: 0.16em;
     color: $color-text;
   }
-
   &__list {
     list-style: none;
     margin: 0;
@@ -481,12 +432,10 @@ a {
       margin-top: 0.25rem;
     }
   }
-
   &__text {
     margin: 0;
     font-size: 0.9rem;
   }
-
   &__social {
     display:flex;
     justify-content: center;
@@ -495,7 +444,6 @@ a {
     padding: 0;
     display: flex;
     gap: 0.5rem;
-
     a {
       display: inline-flex;
       align-items: center;
@@ -515,7 +463,6 @@ a {
       }
     }
   }
-
   &__bottom {
     max-width: 1100px;
     margin: 0 auto;
