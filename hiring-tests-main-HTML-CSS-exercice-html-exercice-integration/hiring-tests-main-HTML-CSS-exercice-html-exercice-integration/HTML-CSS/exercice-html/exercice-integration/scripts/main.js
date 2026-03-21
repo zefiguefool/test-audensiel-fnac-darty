@@ -23,11 +23,11 @@ function initCarousel(carousel) {
 
   if (!viewport || !btnPrev || !btnNext || slides.length === 0) return;
 
-  const getSlideWidth = () => slides[0].clientWidth;
+  const getSlideWidth = () => slides[0].offsetWidth;
 
   const updateButtons = () => {
     const slideWidth = getSlideWidth();
-    const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+    const maxScroll = viewport.scrollWidth - viewport.offsetWidth;
 
     btnPrev.disabled = viewport.scrollLeft <= 0;
     btnNext.disabled = viewport.scrollLeft >= maxScroll - slideWidth / 2;
