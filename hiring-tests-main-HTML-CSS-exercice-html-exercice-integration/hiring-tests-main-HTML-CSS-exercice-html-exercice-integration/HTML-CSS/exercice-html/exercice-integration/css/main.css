@@ -294,7 +294,7 @@ a:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Portrait en desktop, paysage en mobile */
+  /* Gestion des images en portrait pour le desktop et en paysage pour le mobile */
   aspect-ratio: 16/9;
 }
 @media (min-width: 768px) {
@@ -362,7 +362,7 @@ a:focus-visible {
 }
 @media (min-width: 768px) {
   .site-footer footer {
-    justify-content: flex-start; /* si tu veux un alignement différent en desktop */
+    justify-content: flex-start;
     text-align: left;
   }
 }

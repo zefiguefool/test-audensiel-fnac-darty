@@ -29,7 +29,6 @@ Vous pouvez utiliser un préprocesseur CSS, pensez à bien envoyer les fichiers 
 
 - pied de page responsive
 
-
 # Indications
 
 ## Typographie
@@ -54,3 +53,5 @@ Vous pouvez utiliser un préprocesseur CSS, pensez à bien envoyer les fichiers 
 ### Images
 
 - possibilité d'utiliser des banques d'images comme https://source.unsplash.com/
+
+npm run sass pour lancer le projet
