@@ -232,6 +232,7 @@ a {
 .carousel__viewport {
   overflow-x: auto;
   scroll-behavior: smooth;
+  container-type: scroll-state;
 }
 .carousel__track {
   display: flex;
@@ -290,11 +291,28 @@ a {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s ease;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
     &:hover {
       
       color: black;
       transform: scale(1.1);
     }
+  }
+
+  &__btn:disabled {
+    opacity:0
+  }
+}
+
+@container scroll-state(scrollable: left){ // ne fonctione pas pour le moment
+  .carousel__btn--prev {
+    opacity:1
+  }
+}
+@container scroll-state(scrollable: right){ // ne fonctione pas pour le moment
+  .carousel__btn--next {
+    opacity:1
   }
 }
 
