@@ -199,6 +199,7 @@ a:focus-visible {
 .carousel__viewport {
   overflow-x: auto;
   scroll-behavior: smooth;
+  container-type: scroll-state;
 }
 
 .carousel__track {
@@ -264,12 +265,27 @@ a:focus-visible {
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s ease;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
 }
 .carousel__btn:hover {
   color: black;
   transform: scale(1.1);
 }
+.carousel__btn:disabled {
+  opacity: 0;
+}
 
+@container scroll-state(scrollable: left) {
+  .carousel__btn--prev {
+    opacity: 1;
+  }
+}
+@container scroll-state(scrollable: right) {
+  .carousel__btn--next {
+    opacity: 1;
+  }
+}
 /* Card */
 .card {
   position: relative;
