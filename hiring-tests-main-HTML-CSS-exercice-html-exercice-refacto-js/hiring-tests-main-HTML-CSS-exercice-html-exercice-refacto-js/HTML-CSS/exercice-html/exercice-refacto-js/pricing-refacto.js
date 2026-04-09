@@ -18,4 +18,22 @@ assert = (expected, actual) => {
   if (expected !== actual)
     console.warn(`${actual} is not equal to ${expected}`);
 };
-assert(99, calculateDiscount(100, 1, 1));
+
+assert(99, calculateDiscount(100, 0, 1));
+
+assert(100, calculateDiscount(100, 1, 1));
+assert(100, calculateDiscount(100, 2, 1));
+assert(100, calculateDiscount(100, 3, 1));
+assert(100, calculateDiscount(100, 4, 1));
+
+assert(100, calculateDiscount(100, 1, 1));
+assert(100, calculateDiscount(100, 4, 6));
+
+assert(100, calculateDiscount(100, 1, 6));
+assert(100, calculateDiscount(100, 2, 6));
+assert(100, calculateDiscount(100, 3, 6));
+assert(100, calculateDiscount(100, 4, 6));
+
+/* assert(100, calculateDiscount(100, 1, 1));
+assert(100, calculateDiscount(100, 1, 1));
+assert(100, calculateDiscount(100, 1, 1)); */
