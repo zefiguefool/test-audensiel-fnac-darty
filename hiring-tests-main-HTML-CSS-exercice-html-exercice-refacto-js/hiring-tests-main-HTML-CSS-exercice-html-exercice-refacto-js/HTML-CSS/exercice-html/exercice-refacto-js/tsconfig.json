@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "ES2015",
+        "module": "commonjs",
+        "moduleResolution": "bundler",
+        
+        "esModuleInterop": true,
+        "noEmitOnError": true,
+        "strict": true
+    },
+    "include": [
+        "src/**/*",
+        "pricing-refacto.ts"
+    ]
+}
