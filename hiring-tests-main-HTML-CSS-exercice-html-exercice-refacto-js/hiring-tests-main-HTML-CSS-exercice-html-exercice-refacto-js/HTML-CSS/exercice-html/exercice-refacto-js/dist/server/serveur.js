@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const port = 3000;
 app.get('/', (req, res) => {
-    res.send('The sedulous hyena ate the antelope!');
+    res.send("Bienvenue en l'an 3000 ! Vous pouvez détacher votre ceinture.");
 });
 app.listen(port, (error) => {
     if (error) {

@@ -1,5 +1,4 @@
-  
-  
+
 const assertValue = (expected: number, actual: number): void => {
   console.log('Test value:', actual);
   if (expected !== actual) {

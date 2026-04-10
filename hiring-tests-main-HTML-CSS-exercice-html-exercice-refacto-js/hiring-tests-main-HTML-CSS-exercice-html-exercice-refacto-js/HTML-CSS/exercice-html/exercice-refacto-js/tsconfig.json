@@ -10,7 +10,7 @@
         "strict": true
     },
     "include": [
-        "src/**/*",
+        "server/**/*",
         "pricing-refacto.ts"
     ]
 }
